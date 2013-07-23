@@ -6,6 +6,7 @@ set autoindent
 set smartindent
 set expandtab
 set ruler
+set number
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
