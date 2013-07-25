@@ -50,6 +50,4 @@ function! Uncomment()
 endfunction
 
 map 0 ^
-map <C-a> :call Comment()<CR>
-map <C-b> :call Uncomment()<CR>
 map <C-k> :call DeleteTrailingWS()<CR>
