@@ -7,7 +7,7 @@ set smartindent
 set expandtab
 set ruler
 
-highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace ctermbg=166 guibg=166
 match ExtraWhitespace /\s\+$/
 
 command Ni set noautoindent nosmartindent
