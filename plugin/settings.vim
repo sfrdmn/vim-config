@@ -28,27 +28,5 @@ function! DeleteTrailingWS()
   exe "normal `z"
 endfunc
 
-function! Comment()
-  let ext = tolower(expand('%:e'))
-  if ext == 'rb' || ext == 'sh' || ext == 'py'
-    silent s/^/\#/
-  elseif ext == 'js' || ext == 'php' || ext == 'c'
-    silent s:^:\/\/:g
-  elseif ext == 'vim'
-    silent s:^:\":g
-  endif
-endfunction
-
-function! Uncomment()
-  let ext = tolower(expand('%:e'))
-  if ext == 'php' || ext == 'rb' || ext == 'sh' || ext == 'py'
-    silent s/^\#//
-  elseif ext == 'js'
-    silent s:^\/\/::g
-  elseif ext == 'vim'
-    silent s:^\"::g
-  endif
-endfunction
-
 map 0 ^
 map <C-k> :call DeleteTrailingWS()<CR>
