@@ -7,6 +7,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'groovy.vim'
 Bundle 'git@github.com:sfrdmn/vim-config.git'
 Bundle 'vim-scripts/project.tar.gz'
 Bundle 'tpope/vim-commentary'
