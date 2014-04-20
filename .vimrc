@@ -15,25 +15,26 @@ endif
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-Bundle 'bnf.vim'
-Bundle 'groovy.vim'
-Bundle 'git@github.com:sfrdmn/vim-config.git'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-fugitive'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'git@github.com:sophacles/vim-processing.git'
-Bundle 'SuperTab'
-Bundle 'Syntastic'
-Bundle 'pangloss/vim-javascript'
+Plugin 'bnf.vim'
+Plugin 'emmet.vim'
+Plugin 'groovy.vim'
+Plugin 'git@github.com:sfrdmn/vim-config.git'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-fugitive'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'git@github.com:sophacles/vim-processing.git'
+Plugin 'SuperTab'
+Plugin 'Syntastic'
+Plugin 'pangloss/vim-javascript'
 
 filetype plugin indent on     " required!
 
 if has_vundle == 0
-	echo "Installing Bundles, please ignore key map error messages"
+	echo "Installing Plugins, please ignore key map error messages"
 	echo ""
-	:BundleInstall
+	:PluginInstall
 endif
 
 " see :h vundle for more details or wiki for FAQ
